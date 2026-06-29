@@ -1,0 +1,87 @@
+nav {
+    @extend .bg--white;
+    @include font-size(16);
+    padding: 30px 0 !important;
+
+    .menu_nav {
+        gap: 56px;
+        @extend .align-items-center;
+        .nav-link:not(.signup-link) {
+            margin: 0;
+            padding: 0 !important;
+            position: relative;
+            width: max-content;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                width: 0;
+                height: 2px;
+                background-color: $color--red;
+                transition: width .3s ease;
+            }
+
+            &:hover::after,
+            &.active::after {
+                width: 100%;
+            }
+        }
+
+        .signup-link {
+            width: max-content;
+            @extend .color--red;
+            padding: 8.5px 22px !important;
+            border: 2px solid $color--red;
+            border-radius: 20px;
+            transition: all .5s ease-in-out;
+
+            &:hover {
+                background-color: $color--red;
+                color: $color--white !important;
+                border-color: $color--red;
+            }
+        }
+    }
+}
+
+.main-navbar {
+  transition: all 0.35s ease;
+}
+
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  animation: slideDown 0.35s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    nav {
+    .menu_nav {
+        gap: 10px;
+        margin-bottom: 5px;
+    }
+    }
+}
+
+@include media-breakpoint-down(sm) {}
+
+@include media-breakpoint-down(def) {}

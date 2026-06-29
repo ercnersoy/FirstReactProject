@@ -1,0 +1,32 @@
+button {
+  outline: none !important;
+  box-shadow: none !important;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.button-type--1 {
+  @extend .bg--red;
+  border-radius: 20px;
+  @extend .color--white;
+  @extend .font-size--16;
+  padding: 16.5px 45.5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid $color--red;
+  transition: all .3s ease;
+  &:hover {
+    background-color: transparent !important;
+    @extend .color--red;
+  }
+}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
+
+@include media-breakpoint-down(def) {}
