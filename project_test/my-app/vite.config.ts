@@ -60,7 +60,7 @@ export default defineConfig(({ mode }) => {
             
             // Custom naming for CSS files
             if (assetInfo.name && assetInfo.name.endsWith('.css')) {
-              return '.src/theme/css/main.min.css';
+              return 'theme/css/main.min.css';
             }
 
             // Folder control based on the source path
