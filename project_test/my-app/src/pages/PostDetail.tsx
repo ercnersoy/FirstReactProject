@@ -77,12 +77,12 @@ export default function PostDetail() {
 
                 {comments.map((post) => (
                     <div className="comment_card" key={post.id}>
-                        <div className="testimonial_card__top">
-                            <div>
+                       
+                           
                                 <p>{post.email}</p>
                                 <h4>{post.name}</h4>
-                            </div>
-                        </div>
+                      
+                   
                         <p className="testimonial_card__text">
                             “{post.body}”
                         </p>

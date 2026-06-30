@@ -4,6 +4,15 @@
     border: 2px solid #dddddd;
     border-radius: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+        transition: all .3s ease;
+
+        &:hover {
+            border-color: #f53838;
+            transform: scale(1.02);
+        }
 }
 
 @media (max-width:1366px) {}
