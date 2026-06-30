@@ -35,8 +35,8 @@ export default function Posts() {
                         <div className="col-lg-4 col-md-6 col-12" key={post.id}>
                             <div className="comment_section__card h-100">
                                 <div className="comment_section__card_body">
-                                    <div className="comment_section__card__card_body__title">{index + 1}. {post.title}</div>
-                                    <div className="comment_section__card__card_body__desc">{post.body}</div>
+                                    <div className="comment_section__card_body__title">{index + 1}. {post.title}</div>
+                                    <div className="comment_section__card_body__desc">{post.body}</div>
 
                                     <Link to={`/posts/${post.id}`} className="button-type--1 small">
                                         Detaya Git

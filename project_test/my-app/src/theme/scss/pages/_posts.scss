@@ -13,13 +13,13 @@
             transform: scale(1.02);
         }
 
-        &__card_body {
+        &_body {
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: space-between;
             height: 100%;
-
+gap: 20px;
             &__title {
                 @extend .font-size--20;
                 margin-bottom: 10px;
