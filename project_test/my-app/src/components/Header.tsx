@@ -29,10 +29,12 @@ export default class Header extends Component<{}, HeaderState> {
 
   render() {
     const links = [
-      { title: "Features", to: "#features" },
-      { title: "Pricing", to: "#pricing" },
-      { title: "Testimonial", to: "#testimonial" },
-      { title: "Help", to: "#help" },
+      { title: "Features", to: "/#features" },
+      { title: "Pricing", to: "/#pricing" },
+      { title: "Testimonial", to: "/#testimonial" },
+      { title: "Posts", to: "/posts" },
+      { title: "Help", to: "/#help" },
+
     ];
 
     const loginMenu = [

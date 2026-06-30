@@ -1,7 +1,9 @@
 import { createBrowserRouter } from "react-router";
 import App from "../app";
 import Index from "../pages/Index";
-import Comment from "../pages/Comment";
+import Posts from "../pages/Posts";
+import PostDetail from "../pages/PostDetail";
+
 
 
 export const router = createBrowserRouter([
@@ -10,8 +12,8 @@ export const router = createBrowserRouter([
         element: <App />,
         children: [
             { path: "", element: <Index /> },
-            { path: "/comments", element:<Comment />}
-
+            { path: "/posts", element:<Posts />},
+            { path: "posts/:id", element:<PostDetail />}
         ]
     }
 ]);

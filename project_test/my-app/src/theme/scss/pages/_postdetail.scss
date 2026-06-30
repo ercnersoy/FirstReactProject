@@ -1,0 +1,17 @@
+.comment_card {
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #dddddd;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:1366px) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
+
+@include media-breakpoint-down(def) {}

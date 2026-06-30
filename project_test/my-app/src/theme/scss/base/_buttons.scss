@@ -17,9 +17,13 @@ button {
   font-weight: bold;
   border: 2px solid $color--red;
   transition: all .3s ease;
+  display: inline-block;
   &:hover {
     background-color: transparent !important;
     @extend .color--red;
+  }
+  &.small{
+    padding: 10px 20px;
   }
 }
 

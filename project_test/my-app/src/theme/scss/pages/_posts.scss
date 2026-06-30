@@ -1,0 +1,44 @@
+.comment_section {
+    &__card {
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(221, 221, 221);
+        border-radius: 20px;
+        padding: 20px;
+        transition: all .3s ease;
+
+        &:hover,
+        &.active {
+            border-color: #f53838;
+            transform: scale(1.02);
+        }
+
+        &__card_body {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            height: 100%;
+
+            &__title {
+                @extend .font-size--20;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+
+            &__desc {
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+@media (max-width:1366px) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
+
+@include media-breakpoint-down(def) {}

@@ -17,7 +17,7 @@ h2 {
 }
 
 section {
-  scroll-margin-top: 120px;
+    scroll-margin-top: 120px;
 }
 
 // img{
@@ -339,6 +339,11 @@ section {
         padding: 30px;
         min-height: 150px;
         transition: 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        height: 100%;
 
         img {
             transition: 0.3s ease;
@@ -359,6 +364,7 @@ section {
             align-items: center;
             gap: 16px;
             margin-bottom: 18px;
+            width: 100%;
 
             img {
                 width: 50px;
