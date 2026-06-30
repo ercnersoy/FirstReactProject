@@ -20,6 +20,7 @@ export default function PostDetail() {
     const [error, setError] = useState("");
     const [comments, setComments] = useState<Comment[]>([]);
 
+    // Yorumlar
     useEffect(() => {
         if (!id) return;
 
@@ -31,6 +32,7 @@ export default function PostDetail() {
                 setError(err.message);
             })
     }, [id]);
+    // Yorumlar
 
     useEffect(() => {
         if (!id) return;
@@ -60,9 +62,7 @@ export default function PostDetail() {
 
 
 
-    if (loading) return <div className="container my-5"><Spinner animation="border" role="status">
-        <span className="visually-hidden">Loading...</span>
-    </Spinner></div>;
+    if (loading) return <div className="container my-5"><Spinner animation="border" role="status"><span className="visually-hidden">Loading...</span></Spinner></div>;
     if (error) return <div className="container my-5"><p>{error}</p></div>;
     if (!post) return <div className="container my-5"><p>Post bulunamadı.</p></div>;
 
@@ -72,26 +72,17 @@ export default function PostDetail() {
             <div className="container my-5">
                 <h2 className="mb-4 text-capitalize">{post.title}</h2>
                 <p>{post.body}</p>
-
                 <h2 className="my-4">Comments</h2>
-
                 {comments.map((post) => (
                     <div className="comment_card" key={post.id}>
-                       
-                           
-                                <p>{post.email}</p>
-                                <h4>{post.name}</h4>
-                      
-                   
+                        <p>{post.email}</p>
+                        <h4>{post.name}</h4>
                         <p className="testimonial_card__text">
                             “{post.body}”
                         </p>
                     </div>
                 ))}
             </div>
-
-
-
 
             <section className="customer_section" id="testimonial">
 
