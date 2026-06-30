@@ -39,7 +39,7 @@ export default function Posts() {
                                     <div className="comment_section__card_body__desc">{post.body}</div>
 
                                     <Link to={`/posts/${post.id}`} className="button-type--1 small">
-                                        Detaya Git
+                                        Detail
                                     </Link>
 
                                 </div>
